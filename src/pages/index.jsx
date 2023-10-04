@@ -18,17 +18,17 @@ export default function Home() {
   return (
     <>
       <Seo title="Home - news" desc="news home page" />
-      <main className="container mx-auto px-32">
+      <main className="container mx-auto md:px-32 px-4">
         <Header />
 
-        <div className=" grid grid-cols-3">
-          <div className="col-span-2">
-            <Image src={webDesktop} alt="logo - letter w" className="pr-6" />
-            <div className="flex mt-8">
-              <h1 className="w-[50%] pr-12 pb-4">
+        <div className=" grid md:grid-cols-3 grid-cols-1">
+          <div className="col-span-2 mb-10 md:mb-0">
+            <Image src={webDesktop} alt="logo - letter w" className="md:pr-6" />
+            <div className="flex flex-col md:flew-row mt-8">
+              <h1 className="md:w-[50%] md:pr-12 pb-4">
                 The Bright Future of Web 3.0?
               </h1>
-              <div className="w-[50%] flex flex-col pr-6">
+              <div className="md:w-[50%] flex flex-col md:pr-6">
                 <p className="mb-4 ">
                   We dive into the next evolution of the web that claims to put
                   the power of the platforms back into the hands of the people.
@@ -67,7 +67,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid grid-cols-3 mt-12 mb-12">
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-y-3 mt-12 mb-12">
           <div className="item-grid-gaming">
             <Image src={retroPcs} alt="retro computer" />
             <div className="pr-6">
