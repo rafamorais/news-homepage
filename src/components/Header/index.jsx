@@ -30,6 +30,7 @@ const Header = () => {
             <AiOutlineMenu className="text-[22px]" />
           </span>
         </div>
+
         <nav className={`hidden sm:block `}>
           <ul className="flex flex-col sm:flex-row sm:gap-11">
             <li className="menu-item">
@@ -55,8 +56,8 @@ const Header = () => {
       <div
         onClick={closeNav}
         className={`${
-          isActive ? "w-full " : "w-0 "
-        } fixed overflow-x-hidden h-screen right-0 top-0 flex justify-end bg-[#000]/[.6]`}
+          isActive ? "block " : "hidden "
+        } fixed h-screen w-full left-0 top-0 bg-[#000]/[.6]`}
       />
 
       <div
@@ -93,6 +94,7 @@ const Header = () => {
           </ul>
         </nav>
       </div>
+
       {/* Mobile Menu - open */}
     </header>
   );
