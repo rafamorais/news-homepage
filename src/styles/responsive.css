@@ -1,0 +1,12 @@
+.responsive-menu .menu-item {
+  @apply text-xl;
+}
+
+@media screen and (min-width: 1024px) {
+  .gaming-info {
+    @apply gap-4;
+  }
+  .gaming-info p {
+    @apply text-sm;
+  }
+}

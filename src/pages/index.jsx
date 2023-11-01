@@ -18,23 +18,32 @@ export default function Home() {
   return (
     <>
       <Seo title="Home - news" desc="news home page" />
-      <main className="container mx-auto md:px-32 px-4">
+      <main className="container mx-auto md:px-4 px-2">
         <Header />
 
-        <div className=" grid md:grid-cols-3 grid-cols-1">
+        <div className="grid md:grid-cols-3 grid-cols-1">
           <div className="col-span-2 mb-10 md:mb-0">
-            <Image src={webDesktop} alt="logo - letter w" className="md:pr-6" />
-            <div className="flex flex-col md:flew-row mt-8">
-              <h1 className="md:w-[50%] md:pr-12 pb-4">
-                The Bright Future of Web 3.0?
+            <Image
+              src={webDesktop}
+              alt="logo - letter w"
+              className="md:pr-6 hidden md:block"
+            />
+            <Image
+              src={webDesktopMobile}
+              alt="logo - letter w"
+              className="md:pr-6 md:hidden"
+            />
+            <div className="flex flex-col lg:flex-row mt-8">
+              <h1 className="basis-1/2 pb-4">
+                The Bright <br /> Future of Web 3.0?
               </h1>
-              <div className="md:w-[50%] flex flex-col md:pr-6">
+              <div className="basis-1/2 flex flex-col md:pr-6 justify-start">
                 <p className="mb-4 ">
                   We dive into the next evolution of the web that claims to put
                   the power of the platforms back into the hands of the people.
                   But is it really fulfilling its promise?
                 </p>
-                <button className="bg-soft-red hover:bg-very-dark-blue hover:text-off-white px-6 py-[10px] mt-auto w-fit tracking-[0.2rem] track font-bold text-xs text-white font-inter uppercase">
+                <button className="bg-soft-red mt-auto hover:bg-very-dark-blue hover:text-off-white px-6 py-[10px] w-fit tracking-[0.2rem] track font-bold text-xs text-white font-inter uppercase">
                   Read more
                 </button>
               </div>
@@ -67,30 +76,30 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 grid-cols-1 gap-y-3 mt-12 mb-12">
-          <div className="item-grid-gaming">
+        <div className="gaming grid lg:grid-cols-3 grid-cols-1 gap-y-3 mt-14 mb-12">
+          <div className="gaming-info">
             <Image src={retroPcs} alt="retro computer" />
-            <div className="pr-6">
-              <span>01</span>
-              <h5>Reviving Retro PCs</h5>
+            <div className="pr-2 lg:pr-6">
+              <span className="">01</span>
+              <h5 className="">Reviving Retro PCs</h5>
               <p>What happens when old PCs are given modern upgrades?</p>
             </div>
           </div>
 
-          <div className="item-grid-gaming">
+          <div className="gaming-info">
             <Image src={laptops} alt="keyboard computer" />
-            <div className="pr-6">
-              <span>02</span>
-              <h5>Top 10 Laptops of 2022</h5>
+            <div className="pr-2 lg:pr-6">
+              <span className="">02</span>
+              <h5 className="">Top 10 Laptops of 2022</h5>
               <p>Our best picks for various needs and budgets.</p>
             </div>
           </div>
 
-          <div className="item-grid-gaming">
+          <div className="gaming-info">
             <Image src={gamingGrowth} alt="keyboard computer" />
             <div>
-              <span>03</span>
-              <h5>The Growth of Gaming</h5>
+              <span className="">03</span>
+              <h5 className="">The Growth of Gaming</h5>
               <p>How the pandemic has sparked fresh opportunities.</p>
             </div>
           </div>
@@ -98,6 +107,4 @@ export default function Home() {
       </main>
     </>
   );
-}
-{
 }

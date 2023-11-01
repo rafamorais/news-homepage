@@ -5,23 +5,18 @@
   body {
     @apply bg-off-white;
   }
-
   h1 {
     @apply text-5xl font-bold text-very-dark-blue;
   }
-
   h2 {
     @apply text-4xl font-bold text-soft-orange;
   }
-
   h3 {
     @apply text-xl font-bold text-off-white hover:text-soft-orange;
   }
-
   h5 {
     @apply text-base font-bold text-very-dark-blue hover:text-soft-red;
   }
-
   p {
     @apply text-[15px] text-dark-grayish-blue;
   }
@@ -40,16 +35,20 @@
   .item-new-section p {
     @apply text-grayish-blue mt-2;
   }
-  .item-grid-gaming {
-    @apply flex gap-4 items-center;
+
+  .gaming-info {
+    @apply flex gap-2 items-center;
   }
-  .item-grid-gaming img {
-    @apply object-cover h-[114px] w-[100px];
+  .gaming-info img {
+    @apply w-[100px];
   }
-  .item-grid-gaming span {
+  .gaming-info span {
     @apply text-grayish-blue font-bold text-2xl;
   }
-  .item-grid-gaming h5 {
-    @apply py-2;
+  .gaming-info h5 {
+    @apply text-base py-2;
+  }
+  .gaming-info p {
+    @apply text-xs;
   }
 }
