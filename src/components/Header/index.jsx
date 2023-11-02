@@ -57,7 +57,7 @@ const Header = () => {
         onClick={closeNav}
         className={`${
           isActive ? "block " : "hidden "
-        } fixed h-screen w-full left-0 top-0 bg-[#000]/[.6]`}
+        } fixed h-screen w-full animate-fade left-0 top-0 bg-[#000]/[.6]`}
       />
 
       <div

@@ -21,6 +21,15 @@ module.exports = {
         "dark-grayish-blue": "hsl(236, 13%, 42%)",
         "very-dark-blue": " hsl(240, 100%, 5%)",
       },
+      animation: {
+        fade: "fade 200ms",
+      },
+      keyframes: {
+        fade: {
+          from: { opacity: ".4" },
+          to: { opacity: "1" },
+        },
+      },
     },
   },
   plugins: [],
